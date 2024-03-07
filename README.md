@@ -10,13 +10,13 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] **User can add an item to their wishlist**
-- [ ] **User can see their list of items based on previously inputted items**
+- [x] **User can add an item to their wishlist**
+- [x] **User can see their list of items based on previously inputted items**
 
 The following **optional** features are implemented:
 
 - [ ] Wishlist app is 🎨 **customized** 🎨
-- [ ] User can delete an item by long pressing on the item
+- [x] User can delete an item by long pressing on the item
 - [ ] User can open an item's URL by clicking on the item
 
 The following **additional** features are implemented:

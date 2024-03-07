@@ -4,53 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    toolcs:context=".MainActivity">
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="313dp"
-        tools:layout_editor_absoluteY="673dp" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/WordInput"
-        android:layout_width="300dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="16dp"
-        android:inputType="text|textAutoComplete|textAutoCorrect"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.997" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <EditText
-        android:id="@+id/WordInput"
-        android:layout_width="149dp"
-        android:layout_height="28dp"
-        android:layout_marginBottom="16dp"
-        android:inputType="text|textAutoComplete|textAutoCorrect"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.713"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.879" />
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="98dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.865"
+            app:layout_constraintStart_toEndOf="@+id/ItemUrl" />
 
-    <EditText
-        android:id="@+id/WordInput"
-        android:layout_width="117dp"
-        android:layout_height="38dp"
-        android:layout_marginBottom="16dp"
-        android:inputType="text|textAutoComplete|textAutoCorrect"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.892" />
+        <EditText
+            android:id="@+id/ItemUrl"
+            android:layout_width="259dp"
+            android:layout_height="46dp"
+            android:hyphenationFrequency="normal"
+            android:inputType="text|textAutoComplete|textAutoCorrect"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ItemPrice"
+            app:layout_constraintHorizontal_bias="0.036"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ItemName"
+            app:layout_constraintVertical_bias="0.304" />
+
+        <EditText
+            android:id="@+id/ItemPrice"
+            android:layout_width="107dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="94dp"
+            android:inputType="text|textAutoComplete|textAutoCorrect"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.753"
+            app:layout_constraintStart_toEndOf="@+id/ItemName"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.13" />
+
+        <EditText
+            android:id="@+id/ItemName"
+            android:layout_width="264dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:inputType="text|textAutoComplete|textAutoCorrect"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.141" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,5 +9,3 @@ f
 6app/src/main/java/com/example/wishlist/MainActivity.kt,1\0\1096c85800f8e7908d542e04f6f870445b9ac445
 b
 2app/src/main/java/com/example/wishlist/WishList.kt,0\1\017b23ecc14c0721deaa59005c55a7f671004e85
-i
-9app/src/main/java/com/example/wishlist/WishListFetcher.kt,3\b\3b31a46b01a31deb8d398a544ea0513a29e47a61
